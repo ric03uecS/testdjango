@@ -1,0 +1,22 @@
+[
+  {
+    "model": "myapp.post",
+    "pk": 1,
+    "fields": {
+      "title": "John",
+      "data": "Lennon",
+      "category": "imagine",
+      "date" : "2014-12-04T05:45:27.704Z"
+    }
+  },
+  {
+    "model": "myapp.post",
+    "pk": 2,
+    "fields": {
+      "title": "Paul",
+      "data": "McCartney",
+      "category": "beatles",
+      "date" : "2014-12-05T05:45:27.704Z"
+    }
+  }
+]
