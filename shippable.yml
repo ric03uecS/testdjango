@@ -3,7 +3,7 @@ python: 2.7
 before_script:
   - python manage.py syncdb
   - python manage.py migrate
-  - python manage.py loaddata fixture.json
+  - python manage.py loaddata fixtures/fixture.json
 
 script:
   - python manage.py test myapp
