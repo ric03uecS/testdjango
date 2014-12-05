@@ -4,6 +4,7 @@ from django.test import TestCase
 from myapp.models import Post
 
 class BlogPostTestCase(TestCase):
+    fixtures = ['fixtures/fixture.json',]
     def setUp(self):
         Post.objects.create(id=1, 
             title='Starting a Django 1.6 Project the Right Way', 
@@ -18,5 +19,9 @@ class BlogPostTestCase(TestCase):
         """Animals that can speak are correctly identified"""
         first_post = Post.objects.get(id=1)
         second_post = Post.objects.get(id=2)
+        third_post = Post.objects.get(id=3)
+        fourth_post = Post.objects.get(id=4)
         self.assertEqual(first_post.category, 'Django')
         self.assertEqual(second_post.category, 'Python')
+        self.assertEqual(third_post.category, 'imagine')
+        self.assertEqual(fourth_post.category, 'beatles')
