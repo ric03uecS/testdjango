@@ -34,8 +34,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'south',
-
     'myapp',
     'django.contrib.admin',
     'django.contrib.auth',
