@@ -4,7 +4,7 @@ from django.test import TestCase
 from myapp.models import Post
 
 class BlogPostTestCase(TestCase):
-    fixtures = ['fixtures/fixture.json',]
+    fixtures = ['fixtures/fixture',]
     def setUp(self):
         Post.objects.create(id=1, 
             title='Starting a Django 1.6 Project the Right Way', 
